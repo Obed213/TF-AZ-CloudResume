@@ -1,0 +1,38 @@
+body {
+  font-family: "Open Sans", Verdana, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  background-color: rgb(252, 247, 247);
+}
+
+
+
+
+.page1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Page1Heading {
+  font-family: "Open Sans", Verdana, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 60px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+}
+
+.socialIcons {
+  font-size: 50px;
+}
+
+.page2 {
+  line-height: 24px;
+}
