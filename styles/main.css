@@ -8,9 +8,6 @@ body {
   background-color: rgb(252, 247, 247);
 }
 
-
-
-
 .page1 {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -33,6 +30,6 @@ body {
   font-size: 50px;
 }
 
-.page2 {
-  line-height: 24px;
+.page2_personalStatement {
+  font-size: 15px;
 }

@@ -33,13 +33,8 @@ To learn.
   4. **Website development:**
       - HTML5
       - CSS
-      - Markdown
 
 ## **4. References**
   - HTML5up.net. (2024). *Hyperspace (webpage template).*  https://html5up.net/hyperspace
   - SuperSimpleDev. (2022). *YouTube - HTML & CSS Full Course - Beginner to Pro (video tutorial).* https://www.youtube.com/watch?v=G3e-cpL7ofc
   - GPSResume. (2024). *GPS Resume (website)* https://www.gpsresume.com/#home
-
-  Test
-  Test 1
-
