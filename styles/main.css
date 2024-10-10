@@ -8,6 +8,22 @@ body {
   background-color: rgb(252, 247, 247);
 }
 
+.socialIcons {
+  font-size: 50px;
+}
+
+
+
+.italicText {
+  font-style: italic;
+  font-weight:100;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+
+
+/*---- PAGE 1 CSS ----*/
 .page1 {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -23,13 +39,53 @@ body {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-
 }
 
-.socialIcons {
-  font-size: 50px;
-}
 
+/*---- PAGE 2 CSS ----*/
 .page2_personalStatement {
   font-size: 15px;
+}
+
+
+/*---- PAGE 3 CSS ----*/
+.page3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sectionTitle{
+  font-size: 30px;
+}
+
+.subHeading {
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+.subText {
+ margin-top: 5px;
+}
+
+.page3_workhistory {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 50px;
+}
+
+
+
+.page3_qualifications {
+  width: 550px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 50px;
+}
+
+.page3_projectsAndAchievements {
+  width: 850px;
+  display: inline-block;
+  vertical-align: top;
 }
