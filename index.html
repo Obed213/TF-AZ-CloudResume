@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Resume - Obed Medara</title>
+    <title>Obed's Resume</title>
        
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   
+  <!-- ========================= -->
+
   <body>
-     
-    <!-- PAGE 1 -->
-    <div class="page1">
+    
+    <section id="personalStatement">
       <p class="Page1Heading">Hi, I'm Obed<p>
       <p>This is my Cloud Resume which I created as part of the Cloud Resume Challenge using the Azure platform.</p>
       <h4>Socials</h4>
@@ -29,29 +30,30 @@
           <a href="https://www.youtube.com/@adonbilivit2136" target="_blank"><i class="fa-brands fa-youtube" style="color: rgb(255, 255, 255)"></i></a>
         </span>
       </ul>
-    </div>
-    
+    </section>
 
-    <!-- PAGE 2 -->
-    <!-- ABOUT ME -->
-    <div> 
-      <strong class="sectionTitle">About me</strong>      
+    <!-- ========================= -->
 
-      <div class="page2_personalStatement">
-        <p>As a seasoned Information Technology (IT) professional with over 4 years of enterprise experience, I thrive on staying at the forefront of technology. 
-          My passion lies in leveraging innovative solutions to enhance business processes. Currently, I'm diving into Infrastructure as Code (IaC) to master best 
-          practices for managing infrastructure efectively. Simultaneously, I'm pursuing associate-level Microsoft certifcations, which will benefit my Cloud 
-          Engineering journey. I would be a great addition to any business that incorporates information systems into their business models. <br><br>
-          I have experience in on-premise, hybrid and full cloud administration, and scripting.<br>
-          Secondary to technical support for endpoints, networking, licensing, ITSM, governance and information security.</p>
-      </div>
-    </div>
+    <section id="aboutMe"> 
+      <P class="sectionTitle">About me</P>      
 
+      <p class="page2_personalStatement">
+        As a seasoned Information Technology (IT) professional with over 4 years of enterprise experience, I thrive on 
+        taying at the forefront of technology. My passion lies in leveraging innovative solutions to enhance business processes. Currently, I'm diving 
+        into Infrastructure as Code (IaC) to master best practices for managing infrastructure efectively. Simultaneously, I'm pursuing associate-level 
+        Microsoft certifcations, which will benefit my Cloud Engineering journey. I would be a great addition to any business that incorporates 
+        information systems into their business models.<br><br>
+        I have experience in on-premise, hybrid and full cloud administration, and scripting.<br>
+        Secondary to technical support for endpoints, networking, licensing, ITSM, governance and information security.
+      </p>
+      
+    </section>
 
-    <!-- WORK HISTORY -->
-    <div class="page3">
+    <!-- ========================= -->
+
+    <section id="resume">
       <div class="page3_workhistory">
-        <strong class="sectionTitle">Work History</strong>
+        <P class="sectionTitle">Work History</P>
         
         <div>
           <p class="subHeading">Service Desk Analyst</p> 
@@ -64,14 +66,14 @@
         </div>
       </div>
   
-  
-      <!-- QUALIFICATIONS -->
+      <!-- ========================= -->
+
       <div class="page3_qualifications">
-        <strong class="sectionTitle">Qualifications</strong>
+        <P class="sectionTitle">Qualifications</P>
         
         <div>
           <p class="subHeading">Level 7 - Bachelor of Information Technology</p>
-          <p class="italicText">Double major in Networking and Cyber Security<br>WelTec Petone - Wellington, New Zealand - 2010 - 2019</p>
+          <p class="italicText">Double major in Networking and Cyber Security<br>WelTec (Wellington Institute of Technology) Petone<br>Wellington, New Zealand<br>2010 - 2019</p>
         </div>
   
         <div>
@@ -83,42 +85,52 @@
             MCTS 70-643 - Configuring Windows Server 2008 - Application Infrastructure<br>
             MCTS 70-647 - Windows Server Enterprise Administration<br>
             MCTS 70-620 - Configuring Windows Vista Client<br>
-            WelTec Petone - Wellington, New Zealand - 2011
+            2011
           </p>
         </div>
   
         <div>
           <p class="subHeading">Level 5 - Diploma in Computer Servicing</p>
-          <p class="italicText">WelTec Petone - Wellington, New Zealand - 2010</p>
+          <p class="italicText">2010</p>
         </div>
       </div>
   
-  
-      <!-- PROJECTS AND ACHIEVEMENTS -->
+      <!-- ========================= -->
+
       <div class="page3_projectsAndAchievements">
-        <strong class="sectionTitle">Projects and Achievements</strong>
+        <P class="sectionTitle">Projects and Achievements</P>
   
         <div>
-          <p class="italicText">2024</p>
-          <p>Cloud resume challenge - Azure platform</p>
-          <p>Terraform - IaC</p>
-          <p>Certification - SC900 - Microsoft Certified: Security, Compliance, and Identity Fundamentals.</p>
-          <p>Certification - MS900 - Microsoft 365 Certified: Fundamentals.</p>
-          <p>Git and GitHub</p>
-          <p>Azure free tier tenant</p>
+          <div class="page3_year">
+            <p>2024</p>
+          </div>
+
+          <p class="page3_projects">Cloud resume challenge - Azure platform<br>
+            Terraform - IaC<br>
+            Certification - SC900 - Microsoft Certified: Security, Compliance, and Identity Fundamentals.<br>
+            Certification - MS900 - Microsoft 365 Certified: Fundamentals.<br>
+            Git and GitHub<br>
+            Azure free tier tenant<br>
+          </p>
         </div>
   
         <div>
-          <p class="italicText">2023</p>
-          <p>Certification - AZ900 - Microsoft Certified: Azure Fundamentals.</p>
+          <div class="page3_year">
+            <p>2023</p>
+          </div>
+
+          <p class="page3_projects">Certification - AZ900 - Microsoft Certified: Azure Fundamentals.</p>
         </div>
-  
+        
         <div>
-          <p class="italicText">2022</p>
-          <p>Course - AZ 040T00 - Auldhouse Professional Business Training: Automating Administration with PowerShell.</p>
+          <div class="page3_year">
+            <p>2022</p>
+          </div>
+          
+          <p class="page3_projects">Course - AZ 040T00 - Auldhouse Professional Business Training: Automating Administration with PowerShell.</p>
         </div>
       </div>
-    </div>
+    </section>
 
   </body>
 

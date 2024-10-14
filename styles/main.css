@@ -1,3 +1,6 @@
+/*====================*/
+/*---- GLOBAL CSS ----*/
+/*====================*/
 body {
   font-family: "Open Sans", Verdana, sans-serif;
   font-optical-sizing: auto;
@@ -12,8 +15,6 @@ body {
   font-size: 50px;
 }
 
-
-
 .italicText {
   font-style: italic;
   font-weight:100;
@@ -21,10 +22,16 @@ body {
   margin-bottom: 40px;
 }
 
+.sectionTitle{
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+}
 
-
+/*====================*/
 /*---- PAGE 1 CSS ----*/
-.page1 {
+/*====================*/
+#personalStatement {
   margin-top: 50px;
   margin-bottom: 50px;
   font-weight: bold;
@@ -41,27 +48,36 @@ body {
     "wdth" 100;
 }
 
-
+/*====================*/
 /*---- PAGE 2 CSS ----*/
+/*====================*/
+#aboutMe {
+  vertical-align: middle;
+  padding-left: 50px;
+  
+}
+
+
 .page2_personalStatement {
   font-size: 15px;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  display: inline-block;
 }
 
-
+/*====================*/
 /*---- PAGE 3 CSS ----*/
-.page3 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+/*====================*/
+#resume {
 }
 
-.sectionTitle{
-  font-size: 30px;
-}
+
 
 .subHeading {
   margin-top: 8px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
+  font-weight: 500;
 }
 
 .subText {
@@ -70,22 +86,45 @@ body {
 
 .page3_workhistory {
   width: 300px;
-  display: inline-block;
   vertical-align: top;
   margin-right: 50px;
 }
 
-
-
 .page3_qualifications {
   width: 550px;
-  display: inline-block;
   vertical-align: top;
   margin-right: 50px;
 }
 
 .page3_projectsAndAchievements {
   width: 850px;
-  display: inline-block;
   vertical-align: top;
+}
+
+.page3_year {
+  display: inline-block;
+  width: 45px;
+  vertical-align: top;
+  margin-top: 8px;
+  font-style: italic;
+  font-weight:100;
+}
+
+.page3_projects {
+  display: inline-block;
+  width: 800px;
+  vertical-align: top;
+  margin-top: 8px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+
+
+
+
+.random {
+border-style: solid;
+border-color: black;
+border-width: 1px;
 }
