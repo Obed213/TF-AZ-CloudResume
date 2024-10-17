@@ -8,7 +8,10 @@ body {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  background-color: rgb(252, 247, 247);
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .socialIcons {
@@ -25,8 +28,41 @@ body {
 .sectionTitle{
   font-size: 30px;
   font-weight: 700;
-  display: inline-block;
+
 }
+
+.class-name-of-grid-element {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 100px 200px;
+}
+
+
+/*========================*/
+/*---- NAVIGATION BAR ----*/
+/*========================*/
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  
+}
+
+.nav-bar a {
+  padding: 15px;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  color: rgb(252, 133, 133);
+}
+
+.nav-bar a:current {
+  color: rgb(255, 0, 0);
+}
+
 
 /*====================*/
 /*---- PAGE 1 CSS ----*/
@@ -72,9 +108,6 @@ body {
 /*====================*/
 /*---- PAGE 3 CSS ----*/
 /*====================*/
-#resume {
-}
-
 
 
 .subHeading {
