@@ -62,3 +62,24 @@ To learn.
   4. **Website development:**
       - HTML5
       - CSS
+
+  ## **3. What did I learn?**
+  1. **Azure:**
+      - Management:
+          - Resources
+          - Cost
+      - Azure Regions
+      - Azure Resource Groups
+      - Azure Storage Accounts - BLOB Storage
+      - Azure Content Delivery Netowork (CDN)
+  2. **Terraform:**
+      - HashiCorp Configuration Language (HCL)
+      - IaC deployment techniques and methods.
+  3. **Git and GitHub:**
+      - Git commands
+      - Markdown (MD)
+      - CI/CD
+  4. **Website development:**
+      - HTML5
+      - CSS
+      
