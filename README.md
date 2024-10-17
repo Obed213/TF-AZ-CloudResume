@@ -9,7 +9,7 @@ Front end for my Cloud Resume
 
 ## **1. What is this?**
 It's a digital representation of my resume/CV.<br>
-I developed this as part of my cloud journey.
+I developed this as part of my IT journey.
 
 ## **2. Why did I make this?**
 To learn.
