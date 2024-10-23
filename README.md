@@ -8,8 +8,7 @@ Front end for my Cloud Resume
   4. References
 
 ## **1. What is this?**
-It's a digital representation of my resume/CV.<br>
-I developed this as part of my IT journey.
+Repository for the content for my digital resume/CV.<br>
 
 ## **2. Why did I make this?**
 To learn.
@@ -25,19 +24,25 @@ To learn.
       - Azure Content Delivery Netowork (CDN)
   2. **Terraform:**
       - HashiCorp Configuration Language (HCL)
-      - IaC deployment techniques and methods.
+      - Infrastructure as Code (IaC) deployment techniques, methods and best practise.
   3. **Git and GitHub:**
-      - Git commands
+      - Git
+      - Git Hub
       - Markdown (MD)
       - CI/CD
   4. **Website development:**
-      - HTML5
+      - HTML
       - CSS
 
 ## **4. References**
-  - HTML5up.net. (2024). *Hyperspace (webpage template).*  https://html5up.net/hyperspace
-  - SuperSimpleDev. (2022). *YouTube - HTML & CSS Full Course - Beginner to Pro (video tutorial).* https://www.youtube.com/watch?v=G3e-cpL7ofc
+  - SuperSimpleDev. (2022). *YouTube - HTML & CSS Full Course - Beginner to Pro.* https://www.youtube.com/watch?v=G3e-cpL7ofc
+  - Bro Code. (2023). *YouTube - How to create a CSS navigation bar in 6 minutes!.* https://www.youtube.com/watch?v=f3uCSh6LIY0&t=239s
+  - Coding Ninja. (2023). *YouTube - How to Create A Navigation Bar using HTML and CSS | Coding Ninja.* https://www.youtube.com/watch?v=-Yw9gBHE60E
+  - Coding2GO. (2024). *YouTube - Learn CSS Flexbox in 20 Minutes (Course).* https://www.youtube.com/watch?v=wsTv9y931o8
   - GPSResume. (2024). *GPS Resume (website)* https://www.gpsresume.com/#home
+  - HTML5up.net. (2024). *Webpage templates.*  https://html5up.net/hyperspace
+  - Google Fonts. (2024). *Google Fonts - Open Sans font styles.* https://fonts.google.com/
+  - Font Awesome. (2024). *Font Awesome - Social icons.* https://fontawesome.com/
 
 
 
