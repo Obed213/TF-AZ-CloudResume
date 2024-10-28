@@ -5,12 +5,23 @@ name: AZ-ObedResume-CI/CD
 
 # Variables added for modularity and simplicity.
 variables:
-  AZURE_CREDENTIALS: "AZ_SERVICEPRINCIPAL_OBEDRESUME"
-  <STORAGE_ACCOUNT_NAME>: "tfsaresumeobed"
-  CDN_PROFILE_NAME: "TF-CDN1"
-  CDN_ENDPOINT: "TF-AZ-CDN-ObedResume"
-  RESOURCE_GROUP: "RG-TF-AzureResume-Obed"
-  <FOLDER_FILE_TO_HOST>: "Front-end/"
+  - name: AZURE_CREDENTIALS
+    value: AZ_SERVICEPRINCIPAL_OBEDRESUME
+
+  - name: <STORAGE_ACCOUNT_NAME>
+    value: tfsaresumeobed
+  
+  - name: CDN_PROFILE_NAME
+    value: TF-CDN1
+  
+  - name: CDN_ENDPOINT
+    value: TF-AZ-CDN-ObedResume
+  
+  - name: RESOURCE_GROUP
+    value: RG-TF-AzureResume-Obed
+
+  - name: <FOLDER_FILE_TO_HOST>
+    value: Front-end/
 
 
 on:
@@ -27,18 +38,18 @@ jobs:
     - uses: actions/checkout@v3
     - uses: azure/login@v1
       with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{ secrets.$(AZURE_CREDENTIALS) }}
 
     - name: Upload to blob storage
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name <STORAGE_ACCOUNT_NAME> --auth-mode key -d '$web' -s <FOLDER_FILE_TO_HOST>
+            az storage blob upload-batch --account-name $(<STORAGE_ACCOUNT_NAME>) --auth-mode key -d '$web' -s $(<FOLDER_FILE_TO_HOST>)
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "CDN_PROFILE_NAME" --name "CDN_ENDPOINT" --resource-group "RESOURCE_GROUP"
+           az cdn endpoint purge --content-paths  "/*" --profile-name $("CDN_PROFILE_NAME") --name $("CDN_ENDPOINT") --resource-group $("RESOURCE_GROUP")
 
 
   # Azure logout
