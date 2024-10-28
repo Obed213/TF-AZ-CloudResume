@@ -10,3 +10,6 @@ Terraform/.terraform.lock.hcl
 Terraform/terraform.tfstate
 Terraform/terraform.tfstate.backup
 
+
+# Secrets files
+Secrets/
