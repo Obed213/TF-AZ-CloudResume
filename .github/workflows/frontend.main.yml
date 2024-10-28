@@ -5,23 +5,12 @@ name: AZ-ObedResume-CI/CD
 
 # Variables added for modularity and simplicity.
 variables:
-  - name: AZURE_CREDENTIALS
-    value: AZ_SERVICEPRINCIPAL_OBEDRESUME
-
-  - name: <STORAGE_ACCOUNT_NAME>
-    value: tfsaresumeobed
-  
-  - name: CDN_PROFILE_NAME
-    value: TF-CDN1
-  
-  - name: CDN_ENDPOINT
-    value: TF-AZ-CDN-ObedResume
-  
-  - name: RESOURCE_GROUP
-    value: RG-TF-AzureResume-Obed
-
-  - name: <FOLDER_FILE_TO_HOST>
-    value: Front-end/
+AZURE_CREDENTIALS: AZ_SERVICEPRINCIPAL_OBEDRESUME
+<STORAGE_ACCOUNT_NAME> : tfsaresumeobed
+CDN_PROFILE_NAME: TF-CDN1
+CDN_ENDPOINT: TF-AZ-CDN-ObedResume
+RESOURCE_GROUP: RG-TF-AzureResume-Obed
+<FOLDER_FILE_TO_HOST>: Front-end/
 
 
 on:
