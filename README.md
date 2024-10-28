@@ -50,6 +50,7 @@ To learn.
   - HTML5up.net. (2024). *Webpage templates.*  https://html5up.net/hyperspace
   - Google Fonts. (2024). *Open Sans font styles.* https://fonts.google.com/
   - Font Awesome. (2024). *Social icons.* https://fontawesome.com/
+  - Microsoft Learn. (2023). *Use GitHub Actions workflow to deploy your static website in Azure Storage.* https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-static-site-github-actions?tabs=userlevel
 
 
 

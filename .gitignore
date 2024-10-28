@@ -1,9 +1,12 @@
 # Git files
 .git/
 
+
 # Terraform files
-.terraform/
-.terraform.lock.hcl
-terraform.tfstate
-.terraform.tfstate.lock.info
-terraform.tfstate.backup
+# Excluding TF files that contain sensitive information.
+# Included the "main.tf" file for learning purposes.
+Terraform/.terraform/
+Terraform/.terraform.lock.hcl
+Terraform/terraform.tfstate
+Terraform/terraform.tfstate.backup
+

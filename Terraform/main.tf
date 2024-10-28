@@ -48,4 +48,35 @@ resource "azurerm_storage_blob" "Blob1" {
   type                   = "Block"
   content_type           = "text/html"
   source_content         = "<h1> Test Obed213 website.</h1>"
+
+  lifecycle {
+    ignore_changes = [
+      source_content,
+      content_md5
+    ]
+  }
+}
+
+
+##########
+# Azure CDN Profile
+resource "azurerm_cdn_profile" "CDN1" {
+  name                = "TF-CDN1"
+  location            = "Global" # This should always be set to Global due to it being a CDN. Don't user variables here.
+  resource_group_name = azurerm_resource_group.RG1.name
+  sku                 = "Standard_Microsoft"
+}
+
+# Endpoints to be added to the Azure CDN Profile
+resource "azurerm_cdn_endpoint" "CDN1-endPoint1" {
+  name                          = "TF-AZ-CDN-ObedResume"
+  profile_name                  = azurerm_cdn_profile.CDN1.name
+  location                      = azurerm_cdn_profile.CDN1.location
+  resource_group_name           = azurerm_resource_group.RG1.name
+  querystring_caching_behaviour = "IgnoreQueryString"
+
+  origin {
+    name      = "TF-AZ-CDN-Origin1"
+    host_name = "tfsaresumeobed.z24.web.core.windows.net"
+  }
 }

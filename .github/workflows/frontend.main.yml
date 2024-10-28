@@ -1,0 +1,48 @@
+# Azure BLOB Static Website CI/CD.
+# Triggers workflow when push is made to the GitHub Repo.
+name: AZ-ObedResume-CI/CD
+
+
+# Variables added for modularity and simplicity.
+variables:
+  AZURE_CREDENTIALS: "AZ_SERVICEPRINCIPAL_OBEDRESUME"
+  <STORAGE_ACCOUNT_NAME>: "tfsaresumeobed"
+  CDN_PROFILE_NAME: "TF-CDN1"
+  CDN_ENDPOINT: "TF-AZ-CDN-ObedResume"
+  RESOURCE_GROUP: "RG-TF-AzureResume-Obed"
+  <FOLDER_FILE_TO_HOST>: "Front-end/"
+
+
+on:
+    push:
+        branches: [ main ]
+        paths:
+        - 'Front-end/**'
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: azure/login@v1
+      with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Upload to blob storage
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+            az storage blob upload-batch --account-name <STORAGE_ACCOUNT_NAME> --auth-mode key -d '$web' -s <FOLDER_FILE_TO_HOST>
+    - name: Purge CDN endpoint
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+           az cdn endpoint purge --content-paths  "/*" --profile-name "CDN_PROFILE_NAME" --name "CDN_ENDPOINT" --resource-group "RESOURCE_GROUP"
+
+
+  # Azure logout
+    - name: logout
+      run: |
+            az logout
+      if: always()
