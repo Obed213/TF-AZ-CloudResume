@@ -15,35 +15,35 @@ To learn and gain hands on experience.
 
 ## **3. What did I learn?**
   1. **Azure**:
-    - Management:
-        - Resources
-        - Cost
-          - [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/?msockid=2a753966bbdc602b00612d80baee61e7)
-          - Budgets
-    - Azure Regions
-    - Azure Resource Manager (ARM)
-    - Azure Resource Groups
-    - Azure Storage Accounts
-      - BLOB Storage
-          - Static Website
-    - Azure Content Delivery Network (CDN)
-      - CND Endpoints
+      - Management:
+          - Resources
+          - Cost
+              - [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/?msockid=2a753966bbdc602b00612d80baee61e7)
+              - Budgets
+      - Azure Regions
+      - Azure Resource Manager (ARM)
+      - Azure Resource Groups
+      - Azure Storage Accounts
+          - BLOB Storage
+              - Static Website
+      - Azure Content Delivery Network (CDN)
+          - CND Endpoints
   2. **Terraform**:
-    - [HashiCorp Configuration Language (HCL)](https://github.com/Obed213/TF-AZ-CloudResume-FrontEnd/blob/main/Terraform/main.tf)
-    - Infrastructure as Code (IaC) deployment techniques, methods and best practise.
-    - [Terraform Registry](https://registry.terraform.io/)
+      - [HashiCorp Configuration Language (HCL)](https://github.com/Obed213/TF-AZ-CloudResume-FrontEnd/blob/main/Terraform/main.tf)
+      - Infrastructure as Code (IaC) deployment techniques, methods and best practise.
+      - [Terraform Registry](https://registry.terraform.io/)
   3. **Git and GitHub**:
-    - Git
-    - Git Hub:
-      - GitHub Actions - CI/CD
-        - [YAML](https://github.com/Obed213/TF-AZ-CloudResume-FrontEnd/blob/main/.github/workflows/frontend.main.yml)
-    - [Markdown (MD)](https://github.com/Obed213/TF-AZ-CloudResume-FrontEnd/blob/main/README.md?plain=1)
+      - Git
+      - Git Hub:
+          - GitHub Actions - CI/CD
+            - [YAML](https://github.com/Obed213/TF-AZ-CloudResume-FrontEnd/blob/main/.github/workflows/frontend.main.yml)
+      - [Markdown (MD)](https://github.com/Obed213/TF-AZ-CloudResume-FrontEnd/blob/main/README.md?plain=1)
   4. **Website development**:
-    - [HTML](https://github.com/Obed213/TF-AZ-CloudResume-FrontEnd/blob/main/Front-end/index.html)
-    - [CSS](https://github.com/Obed213/TF-AZ-CloudResume-FrontEnd/blob/main/Front-end/styles/main.css)
+      - [HTML](https://github.com/Obed213/TF-AZ-CloudResume-FrontEnd/blob/main/Front-end/index.html)
+      - [CSS](https://github.com/Obed213/TF-AZ-CloudResume-FrontEnd/blob/main/Front-end/styles/main.css)
   5. **Apps**:
-    - [VS Code (IDE)](https://code.visualstudio.com/Download)
-      - *Recommended to download from [Microsoft Store](https://apps.microsoft.com/store/detail/XP9KHM4BK9FZ7Q?ocid=pdpshare)*
+      - [VS Code (IDE)](https://code.visualstudio.com/Download)
+          - *Recommended to download from [Microsoft Store](https://apps.microsoft.com/store/detail/XP9KHM4BK9FZ7Q?ocid=pdpshare)*
 
 ## **4. Structure**
   - `.github/workflows/`: YAML configurations for my Azure tenant and GitHub Actions for CI/CD, when changes are made to the 'Front-end/' folder.
