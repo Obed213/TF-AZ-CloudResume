@@ -13,3 +13,7 @@ Terraform/terraform.tfstate.backup
 
 # Secrets files
 Secrets/
+
+
+# Website files to exclude
+Front-end/

@@ -1,10 +1,11 @@
 # **TF-AZ-CloudResume-FrontEnd**
-Front end for my Cloud Resume
+Front end for my [Cloud Resume](https://tf-az-cdn-obedresume.azureedge.net/)
 
 ## **Table of Contents**
   1. What is this?
   2. Why did I make this?
   3. What did I learn?
+  4. Structure
   4. References
 
 ## **1. What is this?**
@@ -15,29 +16,43 @@ To learn.
 
 ## **3. What did I learn?**
   1. **Azure:**
-      - Management:
-          - Resources
-          - Cost
-      - Azure Regions
-      - Azure Resource Manager (ARM)
-      - Azure Resource Groups
-      - Azure Storage Accounts
-        - BLOB Storage
-            - Static Website
+    - Management:
+        - Resources
+        - Cost
+          - [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/?msockid=2a753966bbdc602b00612d80baee61e7)
+          - Budgets
+    - Azure Regions
+    - Azure Resource Manager (ARM)
+    - Azure Resource Groups
+    - Azure Storage Accounts
+      - BLOB Storage
+          - Static Website
+    - Azure Content Delivery Network (CDN)
+      - CND Endpoints
   2. **Terraform:**
-      - HashiCorp Configuration Language (HCL)
-      - Infrastructure as Code (IaC) deployment techniques, methods and best practise.
-      - Terraform Registry
+    - [HashiCorp Configuration Language (HCL)](https://github.com/Obed213/TF-AZ-CloudResume-FrontEnd/blob/main/Terraform/main.tf)
+    - Infrastructure as Code (IaC) deployment techniques, methods and best practise.
+    - [Terraform Registry](https://registry.terraform.io/)
   3. **Git and GitHub:**
-      - Git
-      - Git Hub
-      - Markdown (MD)
-      - CI/CD
+    - Git
+    - Git Hub:
+      - GitHub Actions - CI/CD
+        - [YAML](https://github.com/Obed213/TF-AZ-CloudResume-FrontEnd/blob/main/.github/workflows/frontend.main.yml)
+    - [Markdown (MD)](https://github.com/Obed213/TF-AZ-CloudResume-FrontEnd/blob/main/README.md?plain=1)
   4. **Website development:**
-      - HTML
-      - CSS
+    - [HTML](https://github.com/Obed213/TF-AZ-CloudResume-FrontEnd/blob/main/Front-end/index.html)
+    - [CSS](https://github.com/Obed213/TF-AZ-CloudResume-FrontEnd/blob/main/Front-end/styles/main.css)
+  5. **Apps**
+    - [VS Code (IDE)](https://code.visualstudio.com/Download)
+      - *Recommended to download from [Microsoft Store](https://apps.microsoft.com/store/detail/XP9KHM4BK9FZ7Q?ocid=pdpshare)*
 
-## **4. References**
+## **4. Structure**
+  - '.github/workflows': YAML configurations for my Azure tenant and GitHub Actions for CI/CD, when changes are made to the 'Front-end/' folder.
+  - 'Azure/': Commands I used for my Azure tenancy and Terraform IaC set up.
+  - 'Front-end/': Website data.
+  - 'Terraform/': Terraform data.
+
+## **5. References**
   - SuperSimpleDev. (2022). *YouTube - HTML & CSS Full Course - Beginner to Pro.* https://www.youtube.com/watch?v=G3e-cpL7ofc
   - Bro Code. (2023). *YouTube - How to create a CSS navigation bar in 6 minutes!.* https://www.youtube.com/watch?v=f3uCSh6LIY0&t=239s
   - Coding Ninja. (2023). *YouTube - How to Create A Navigation Bar using HTML and CSS | Coding Ninja.* https://www.youtube.com/watch?v=-Yw9gBHE60E
