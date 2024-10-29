@@ -49,7 +49,7 @@ resource "azurerm_storage_blob" "Blob1" {
   content_type           = "text/html"
   source_content         = "<h1> Test Obed213 website.</h1>"
 
-# Lifecycle block is used to ignore the fact that I manually edited the BLOB storage contents, which changed the MD5 hash is the TF State file.
+  # Lifecycle block is used to ignore the fact that I manually edited the BLOB storage contents, which changed the MD5 hash is the TF State file.
   lifecycle {
     ignore_changes = [
       source_content,
@@ -70,14 +70,15 @@ resource "azurerm_cdn_profile" "CDN1" {
 
 # Endpoints to be added to the Azure CDN Profile
 resource "azurerm_cdn_endpoint" "CDN1-endPoint1" {
-  name                          = "TF-CND1-AZ-ObedResume"
+  name                          = "TF-AZ-CDN-ObedResume"
   profile_name                  = azurerm_cdn_profile.CDN1.name
   location                      = azurerm_cdn_profile.CDN1.location
   resource_group_name           = azurerm_resource_group.RG1.name
   querystring_caching_behaviour = "IgnoreQueryString"
+  origin_host_header            = "tfsaresumeobed.z24.web.core.windows.net"
 
   origin {
-    name      = "TF-CND1-Origin"
+    name      = "TF-CDN1-Origin"
     host_name = "tfsaresumeobed.z24.web.core.windows.net"
   }
 }
