@@ -1,6 +1,6 @@
 # Azure BLOB Static Website CI/CD.
-# Triggers workflow when push is made to the GitHub Repo.
-name: AZ-ObedResume-CI/CD
+# Triggers workflow when push is made to the GitHub Repo/Front-end folder.
+name: GitHubActions-CI/CD-AZ-ObedResume
 
 
 on:
@@ -23,7 +23,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name tfsaresumeobed --auth-mode key -d '$web' -s Front-end/
+            az storage blob upload-batch --account-name tfsaresumeobed --auth-mode key -d '$web' -s Front-end/ --overwrite
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
       with:
