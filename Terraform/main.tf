@@ -47,9 +47,9 @@ resource "azurerm_storage_blob" "Blob1" {
   storage_container_name = "$web"
   type                   = "Block"
   content_type           = "text/html"
-  source_content         = "<h1> Test Obed213 website.</h1>"
+  source_content         = "<h1> Test Obed213 website.</h1>" # lifeCycle/excluded
 
-  # Lifecycle block is used to ignore the fact that I manually edited the BLOB storage contents, which changed the MD5 hash is the TF State file.
+  # Lifecycle block is used to ignore the fact that I manually edit the BLOB storage contents, or edit via CI/CD with GitHub Actions, which changes the MD5 hash in the TF State file.
   lifecycle {
     ignore_changes = [
       source_content,
