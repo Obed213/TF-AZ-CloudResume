@@ -57,10 +57,11 @@ To learn and gain hands on experience.
   - `Azure/`: Commands I used for my Azure tenancy and Terraform IaC set up.
   - `Front-end/`: Website data.
   - `Terraform/`: Terraform data.
+  - `Versions/`: Old website version data.
 
 
 ## **5. Architecture**
-![architecture](Front-end/images/TF-AZ-ObedResume-Light.drawio.png)
+![architecture](/Front-end/images/architecture-light-mode-flat.drawio.png)
 
 
 ## **6. Versions**
@@ -86,8 +87,9 @@ To learn and gain hands on experience.
   - Google Fonts. (2024). *Open Sans font styles.* https://fonts.google.com/
   - Font Awesome. (2024). *Social icons.* https://fontawesome.com/
   - Deeditor. (2024). *Deeditor - SVG Editor* https://deeditor.com/
-  - Microsoft Learn. (2023). *Use GitHub Actions workflow to deploy your static website in Azure Storage.* https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-static-site-github-actions?tabs=userlevel
   - Draw io. (2024). *Online Diagram Platform* https://app.diagrams.net/
+  - Microsoft Learn. (2023). *Use GitHub Actions workflow to deploy your static website in Azure Storage.* https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-static-site-github-actions?tabs=userlevel
+
 
 
 
