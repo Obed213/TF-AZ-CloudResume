@@ -1,4 +1,4 @@
-# **TF-AZ-CloudResume-FrontEnd**
+# **TF-AZ-CloudResume**
 
 ## **Table of Contents**
   1. What is this?
@@ -61,7 +61,7 @@ To learn and gain hands on experience.
 
 
 ## **5. Architecture**
-![architecture](/Front-end/images/architecture-light-mode-flat.drawio.png)
+![architecture](/Front-end/images/architecture-light-mode.drawio.png)
 
 
 ## **6. Versions**
