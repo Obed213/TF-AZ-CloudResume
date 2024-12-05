@@ -61,6 +61,7 @@ To learn and gain hands on experience.
 
 
 ## **5. Architecture**
+*Diagram designed for browser light mode.*
 ![architecture](/Front-end/images/architecture-light-mode.drawio.png)
 
 
@@ -89,6 +90,8 @@ To learn and gain hands on experience.
   - Deeditor. (2024). *Deeditor - SVG Editor* https://deeditor.com/
   - Draw io. (2024). *Online Diagram Platform* https://app.diagrams.net/
   - Microsoft Learn. (2023). *Use GitHub Actions workflow to deploy your static website in Azure Storage.* https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-static-site-github-actions?tabs=userlevel
+  - Hits. (2000). *Hits - website hit counter.* https://hits.seeyoufarm.com/
+  - MDN Web Docs. (2024). *X-Forward-For.* https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For
 
 
 
