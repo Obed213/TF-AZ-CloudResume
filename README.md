@@ -61,8 +61,8 @@ To learn and gain hands on experience.
 
 
 ## **5. Architecture**
-*Diagram designed for browser light mode.*
-![architecture](/Front-end/images/architecture-light-mode.drawio.png)
+![architecture](/Front-end/images/architecture-light-mode.drawio.png#gh-light-mode-only)
+![architecture](/Front-end/images/architecture-dark-mode.drawio.png#gh-dark-mode-only)
 
 
 ## **6. Versions**
